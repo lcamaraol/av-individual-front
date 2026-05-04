@@ -1,0 +1,184 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f2f2f2;
+  color:#222;
+}
+
+.container{
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+}
+
+.topo{
+  height:80px;
+  background:#2b2d42;
+  color:white;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:0 40px;
+}
+
+.topo nav{
+  display:flex;
+  gap:25px;
+}
+
+.topo a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.topo a:hover{
+  color:#d4ff00;
+}
+
+.conteudo{
+  flex:1;
+  display:flex;
+}
+
+.sidebar{
+  width:220px;
+  background:#edf2f4;
+
+  padding:30px 20px;
+}
+
+.sidebar h2{
+  margin-bottom:20px;
+}
+
+.sidebar ul{
+  list-style:none;
+
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.sidebar li{
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.sidebar li:hover{
+  transform:translateX(5px);
+}
+
+.principal{
+  flex:1;
+  background:#8d99ae;
+
+  display:flex;
+  flex-direction:column;
+
+  padding:30px;
+  gap:30px;
+}
+
+.banner{
+  background:rgba(255,255,255,0.35);
+  backdrop-filter:blur(8px);
+
+  border-radius:20px;
+  padding:25px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.banner img{
+  width:320px;
+  border-radius:15px;
+}
+
+.texto-banner{
+  max-width:500px;
+}
+
+.texto-banner h2{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.texto-banner p{
+  margin-bottom:20px;
+  font-size:18px;
+}
+
+.texto-banner button{
+  padding:12px 25px;
+  border:none;
+  border-radius:10px;
+
+  background:#b97c56;
+  color:white;
+
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.texto-banner button:hover{
+  transform:scale(1.05);
+}
+
+.produtos{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.card{
+  width:250px;
+  background:rgba(255,255,255,0.4);
+
+  backdrop-filter:blur(10px);
+
+  border-radius:20px;
+  overflow:hidden;
+
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card h3{
+  padding:15px 15px 5px;
+}
+
+.card p{
+  padding:0 15px 20px;
+  color:#7a4d30;
+  font-weight:bold;
+}
+
+.rodape{
+  height:70px;
+  background:#ef233c;
+  color:white;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
